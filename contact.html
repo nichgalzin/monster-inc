@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="about.css" rel="stylesheet" />
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <section>fill out the form to book an initial appointment </section>
+  <form
+      id="form"
+      action="submitted.html"
+    >
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" />
+
+      <label for="company-name">Company Name</label>
+      <input id="company-name" name="company-name" type="text" />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" />
+
+      <label for="message">Message</label>
+      <textarea name="message"></textarea>
+
+      <label for="marketingConsent" class="checkbox">
+        <input id="marketingConsent" name="marketingConsent" type="checkbox" />
+        I consent
+      </label>
+
+      <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
