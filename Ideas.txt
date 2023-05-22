@@ -1,0 +1,2 @@
+-have some elements in the page flash like lightening (use async js to acheive this).
+- have an element that looks like it's crawling across the screen like a bug?
