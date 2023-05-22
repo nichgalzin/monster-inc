@@ -1,6 +1,13 @@
-body {
+body
+{
   padding: 2rem;
   margin: 2rem;
+}
+
+p
+{
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 form
@@ -24,4 +31,10 @@ button
   justify-content: center;
   margin-top: 0.5rem;
   padding: 0.5rem 0.5rem;
+}
+
+input,
+textarea
+{
+  margin-left: 1rem;
 }
