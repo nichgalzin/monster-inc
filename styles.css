@@ -1,8 +1,54 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
+
+
+
+
+
+/*------------------------------------*\
+  Global
+\*------------------------------------*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
+
+
+/*------------------------------------*\
+  Components
+\*------------------------------------*/
+
+/* Page-head */
 
 header {
   display: flex;
@@ -11,6 +57,49 @@ header {
   border-top: 5px solid black;
   border-bottom: 5px solid black;
 }
+
+.logo,
+#navbar {
+  display: flex;
+  align-items: center;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  height: 50px;
+  padding: 5px 20px 10px 20px;
+}
+
+.logo {
+  margin-left: 40px;
+}
+
+#navbar {
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.logo img {
+  max-height: 100%;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: underline;
+  font-size: 20px;
+  color: black;
+}
+
+/* Page-foot */
 
 footer {
   position: absolute;
@@ -61,50 +150,19 @@ footer {
   text-transform: capitalize;
 }
 
-.logo,
-#navbar {
-  display: flex;
-  align-items: center;
-  border-left: 5px solid black;
-  border-right: 5px solid black;
-  height: 50px;
-  padding: 5px 20px 10px 20px;
-}
 
-.logo {
-  margin-left: 40px;
-}
 
-#navbar {
-  justify-content: flex-end;
-  margin-right: 40px;
-}
 
-.logo img {
-  max-height: 100%;
-}
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  text-decoration: underline;
-  font-size: 20px;
-  color: black;
-}
+/*------------------------------------*\
+  Contact Us page
+\*------------------------------------*/
 
 p {
   margin-top: 1rem;
   padding: 1rem;
 }
+
 
 form {
   display: flex;
@@ -117,10 +175,10 @@ form {
   background-color: #fff;
 }
 
+
 label,
 input,
-button
-{
+button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,16 +187,6 @@ button
 }
 
 input,
-textarea
-{
+textarea {
   margin-left: 1rem;
-}
-
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
 }
