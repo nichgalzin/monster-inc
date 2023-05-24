@@ -44,7 +44,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 
 
@@ -118,44 +118,44 @@ p {
 .u-border {
   border-width: 0 5px 5px 5px;
   border-style: solid;
-  border-color: #C9C9C8 
+  border-color: #C9C9C8
 }
 
 .c-border {
   border-width: 5px 0 5px 5px;
   border-style: solid;
-  border-color: #C9C9C8 
+  border-color: #C9C9C8
 }
 
 .backwards-c-border {
   border-width: 5px 5px 5px 0;
   border-style: solid;
-  border-color: #C9C9C8 
+  border-color: #C9C9C8
 }
 
 .n-borde {
   border-width: 5px 5px 0 5px;
   border-style: solid;
-  border-color: #C9C9C8 
+  border-color: #C9C9C8
 }
 
 .backwards-l-border {
   border-width: 0 5px 5px 0;
   border-style: solid;
-  border-color: #C9C9C8 
+  border-color: #C9C9C8
 }
 
 .l-border {
   border-width: 0 0 5px 5px;
   border-style: solid;
-  border-color: #C9C9C8 
+  border-color: #C9C9C8
 }
 
 .margin-top {
   margin-top: 2rem;
 }
 
-/* Font primitives */ 
+/* Font primitives */
 
 .white-txt {
   color: #C9C9C8;
@@ -225,7 +225,7 @@ nav ul li a {
   background-image: url(images/main-city-medium.jpg);
   background-size: cover;
   min-height: 30rem;
-  
+
 }
 
 .description-box p {
@@ -307,16 +307,18 @@ form {
 
 label,
 input,
-button {
+button,
+select {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   margin-top: 0.5rem;
   padding: 0.5rem 0.5rem;
 }
 
 input,
-textarea {
+textarea,
+select {
   margin-left: 1rem;
 }
 
@@ -331,15 +333,15 @@ textarea {
 /* Medium screens */
 
 @media  screen and (min-width: 800px) {
-  
+
   h1 {
     font-size: 4rem;
   }
-  
+
   .banner-grid {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .description-box p {
     margin: 1rem;
   }
