@@ -10,10 +10,10 @@ function handleScreenSizeChange () {
 
     if (window.innerWidth < 800) {
         descriptionBox.classList.add('u-border');
-        descriptionBox.classList.remove('backwards-l-border');
+        descriptionBox.classList.remove('backwards-c-border');
     } else {
         descriptionBox.classList.remove('u-border');
-        descriptionBox.classList.add('backwards-l-border');
+        descriptionBox.classList.add('backwards-c-border');
     }
 }
 

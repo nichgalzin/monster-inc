@@ -127,6 +127,12 @@ p {
   border-color: #C9C9C8 
 }
 
+.backwards-c-border {
+  border-width: 5px 5px 5px 0;
+  border-style: solid;
+  border-color: #C9C9C8 
+}
+
 .n-borde {
   border-width: 5px 5px 0 5px;
   border-style: solid;
@@ -145,8 +151,8 @@ p {
   border-color: #C9C9C8 
 }
 
-.top-space {
-  margin-top: 1rem;
+.margin-top {
+  margin-top: 2rem;
 }
 
 /* Font primitives */ 
@@ -219,6 +225,7 @@ nav ul li a {
   background-image: url(images/main-city-medium.jpg);
   background-size: cover;
   min-height: 30rem;
+  
 }
 
 .description-box p {
