@@ -1,0 +1,192 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
+
+
+
+
+
+/*------------------------------------*\
+  Global
+\*------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/*------------------------------------*\
+  Components
+\*------------------------------------*/
+
+/* Page-head */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.logo,
+#navbar {
+  display: flex;
+  align-items: center;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  height: 50px;
+  padding: 5px 20px 10px 20px;
+}
+
+.logo {
+  margin-left: 40px;
+}
+
+#navbar {
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.logo img {
+  max-height: 100%;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: underline;
+  font-size: 20px;
+  color: black;
+}
+
+/* Page-foot */
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+
+
+
+
+/*------------------------------------*\
+  Contact Us page
+\*------------------------------------*/
+
+p {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+
+label,
+input,
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.5rem;
+}
+
+input,
+textarea {
+  margin-left: 1rem;
+}
