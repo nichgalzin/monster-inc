@@ -307,16 +307,18 @@ form {
 
 label,
 input,
-button {
+button,
+select {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   margin-top: 0.5rem;
   padding: 0.5rem 0.5rem;
 }
 
 input,
-textarea {
+textarea,
+select {
   margin-left: 1rem;
 }
 
