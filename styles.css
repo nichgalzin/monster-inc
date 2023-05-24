@@ -13,17 +13,21 @@
  *
  * BASE
  * Headings.............H1–H6 styles.
+ * Paragraphs...........Paragraph styles.
  *
  * OBJECTS
- * Wrappers.............Wrapping and constraining elements.
+ * Container Primitives...Wrapping and constraining elements.
+ * Border Primitives.....Border classes to correct border thickness.
+ * Font Primitives.......Generic font styles.
  *
  * COMPONENTS
  * Page-head............The main page header.
  * Page-foot............The main page footer.
  * Buttons..............Button elements.
  *
- * TRUMPS
- * Text.................Text helpers.
+ * Media queries
+ * Medium...............Media queries for medium screens
+ *
  */
 
 
@@ -40,7 +44,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
 
 
 
@@ -74,10 +78,88 @@ body {
   Base
 \*------------------------------------*/
 
+/* Headings */
+
 h1 {
   font-family: 'Courgette', cursive;
+  color: #EBEBE9;
+  font-size: 3rem;
+  padding: 1rem;
 }
 
+/* Paragraphs */
+
+p {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+
+
+
+
+/*------------------------------------*\
+  Objects
+\*------------------------------------*/
+
+/* Container primitives */
+
+.grid {
+  display: grid;
+  width: 100%;
+}
+
+/* Border primitives */
+
+.border {
+  border: 5px solid #C9C9C8;
+}
+
+.u-border {
+  border-width: 0 5px 5px 5px;
+  border-style: solid;
+  border-color: #C9C9C8 
+}
+
+.c-border {
+  border-width: 5px 0 5px 5px;
+  border-style: solid;
+  border-color: #C9C9C8 
+}
+
+.backwards-c-border {
+  border-width: 5px 5px 5px 0;
+  border-style: solid;
+  border-color: #C9C9C8 
+}
+
+.n-borde {
+  border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: #C9C9C8 
+}
+
+.backwards-l-border {
+  border-width: 0 5px 5px 0;
+  border-style: solid;
+  border-color: #C9C9C8 
+}
+
+.l-border {
+  border-width: 0 0 5px 5px;
+  border-style: solid;
+  border-color: #C9C9C8 
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+/* Font primitives */ 
+
+.white-txt {
+  color: #C9C9C8;
+}
 
 
 
@@ -135,6 +217,21 @@ nav ul li a {
   text-decoration: underline;
   font-size: 20px;
   color: black;
+}
+
+/* Banner */
+
+.header-box {
+  background-image: url(images/main-city-medium.jpg);
+  background-size: cover;
+  min-height: 30rem;
+  
+}
+
+.description-box p {
+  margin-top: 0.25rem;
+  font-size: 2rem;
+  font-style: italic;
 }
 
 /* Page-foot */
@@ -196,12 +293,6 @@ footer {
   Contact Us page
 \*------------------------------------*/
 
-p {
-  margin-top: 1rem;
-  padding: 1rem;
-}
-
-
 form {
   display: flex;
   flex-direction: column;
@@ -227,4 +318,42 @@ button {
 input,
 textarea {
   margin-left: 1rem;
+}
+
+
+
+
+
+/*------------------------------------*\
+  Media queries
+\*------------------------------------*/
+
+/* Medium screens */
+
+@media  screen and (min-width: 800px) {
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  .banner-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .description-box p {
+    margin: 1rem;
+  }
+
+  #banner p {
+    font-size: 2rem;
+  }
+}
+
+/* Large screens */
+
+@media  screen and (min-width: 1200px) {
+
+  .description-box p {
+    margin: 3rem;
+  }
 }
