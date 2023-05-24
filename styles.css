@@ -328,6 +328,8 @@ textarea {
   Media queries
 \*------------------------------------*/
 
+/* Medium screens */
+
 @media  screen and (min-width: 800px) {
   
   h1 {
@@ -339,12 +341,19 @@ textarea {
   }
   
   .description-box p {
-    margin-top: 1rem;
+    margin: 1rem;
   }
 
   #banner p {
     font-size: 2rem;
   }
-  
+}
 
+/* Large screens */
+
+@media  screen and (min-width: 1200px) {
+
+  .description-box p {
+    margin: 3rem;
+  }
 }
