@@ -4,8 +4,8 @@
  * SETTINGS
  * Global...............Globally-available variables and config.
  *
- * TOOLS
- * Mixins...............Useful mixins.
+ * FONTS
+ * Fonts...............Imported fonts.
  *
  * GENERIC
  * Normalize.css........A level playing field.
@@ -30,6 +30,8 @@
 
 
 
+
+
 /*------------------------------------*\
   Global
 \*------------------------------------*/
@@ -39,6 +41,42 @@
   padding: 0;
   box-sizing: border-box;
 } 
+
+
+
+
+
+
+
+/*------------------------------------*\
+  Fonts
+\*------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+
+
+/*------------------------------------*\
+  Generic
+\*------------------------------------*/
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+
+
+/*------------------------------------*\
+  Base
+\*------------------------------------*/
+
+h1 {
+  font-family: 'Courgette', cursive;
+}
 
 
 
