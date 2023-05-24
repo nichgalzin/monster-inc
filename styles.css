@@ -13,17 +13,21 @@
  *
  * BASE
  * Headings.............H1–H6 styles.
+ * Paragraphs...........Paragraph styles.
  *
  * OBJECTS
- * Wrappers.............Wrapping and constraining elements.
+ * Container Primitives...Wrapping and constraining elements.
+ * Border Primitives.....Border classes to correct border thickness.
+ * Font Primitives.......Generic font styles.
  *
  * COMPONENTS
  * Page-head............The main page header.
  * Page-foot............The main page footer.
  * Buttons..............Button elements.
  *
- * TRUMPS
- * Text.................Text helpers.
+ * Media queries
+ * Medium...............Media queries for medium screens
+ *
  */
 
 
@@ -98,10 +102,14 @@ p {
   Objects
 \*------------------------------------*/
 
+/* Container primitives */
+
 .grid {
   display: grid;
   width: 100%;
 }
+
+/* Border primitives */
 
 .border {
   border: 5px solid #C9C9C8;
@@ -109,25 +117,43 @@ p {
 
 .u-border {
   border-width: 0 5px 5px 5px;
-
+  border-style: solid;
+  border-color: #C9C9C8 
 }
 
 .c-border {
   border-width: 5px 0 5px 5px;
+  border-style: solid;
+  border-color: #C9C9C8 
 }
 
 .n-borde {
   border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: #C9C9C8 
 }
 
-.backwards-c-border {
-  border-width: 5px 5px 5px 0;
+.backwards-l-border {
+  border-width: 0 5px 5px 0;
+  border-style: solid;
+  border-color: #C9C9C8 
+}
+
+.l-border {
+  border-width: 0 0 5px 5px;
+  border-style: solid;
+  border-color: #C9C9C8 
 }
 
 .top-space {
   margin-top: 1rem;
 }
 
+/* Font primitives */ 
+
+.white-txt {
+  color: #C9C9C8;
+}
 
 
 
@@ -195,8 +221,10 @@ nav ul li a {
   min-height: 30rem;
 }
 
-.description-box {
-  text-align: center;
+.description-box p {
+  margin-top: 0.25rem;
+  font-size: 2rem;
+  font-style: italic;
 }
 
 /* Page-foot */
@@ -283,4 +311,24 @@ button {
 input,
 textarea {
   margin-left: 1rem;
+}
+
+
+
+
+
+/*------------------------------------*\
+  Media queries
+\*------------------------------------*/
+
+@media  screen and (min-width: 800px) {
+  .banner-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .description-box p {
+    margin-top: 1rem;
+  }
+  
+
 }
