@@ -322,12 +322,21 @@ textarea {
 \*------------------------------------*/
 
 @media  screen and (min-width: 800px) {
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
   .banner-grid {
     grid-template-columns: 1fr 1fr;
   }
-
+  
   .description-box p {
     margin-top: 1rem;
+  }
+
+  #banner p {
+    font-size: 2rem;
   }
   
 
