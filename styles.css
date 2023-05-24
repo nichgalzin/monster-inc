@@ -74,8 +74,20 @@ body {
   Base
 \*------------------------------------*/
 
+/* Headings */
+
 h1 {
   font-family: 'Courgette', cursive;
+  color: #EBEBE9;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+/* Paragraphs */
+
+p {
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 
@@ -90,6 +102,32 @@ h1 {
   display: grid;
   width: 100%;
 }
+
+.border {
+  border: 5px solid #C9C9C8;
+}
+
+.u-border {
+  border-width: 0 5px 5px 5px;
+
+}
+
+.c-border {
+  border-width: 5px 0 5px 5px;
+}
+
+.n-borde {
+  border-width: 5px 5px 0 5px;
+}
+
+.backwards-c-border {
+  border-width: 5px 5px 5px 0;
+}
+
+.top-space {
+  margin-top: 1rem;
+}
+
 
 
 
@@ -157,6 +195,10 @@ nav ul li a {
   min-height: 30rem;
 }
 
+.description-box {
+  text-align: center;
+}
+
 /* Page-foot */
 
 footer {
@@ -215,12 +257,6 @@ footer {
 /*------------------------------------*\
   Contact Us page
 \*------------------------------------*/
-
-p {
-  margin-top: 1rem;
-  padding: 1rem;
-}
-
 
 form {
   display: flex;
