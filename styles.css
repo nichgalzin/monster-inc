@@ -91,6 +91,11 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-family: 'Courgette', cursive;
+  font-size: 1.5rem;
+}
+
 /* Paragraphs */
 
 p {
@@ -113,10 +118,25 @@ p {
   width: 100%;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  max-width: 360px;
+  margin: 1rem 1rem;
+}
+
 /* Spacing primitives */
 
 .margin-top {
   margin-top: 2rem;
+}
+
+.margin-top-sm {
+  margin-top: 0.5rem;
 }
 
 /* Border primitives */
