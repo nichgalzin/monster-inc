@@ -82,9 +82,13 @@ body {
 
 h1 {
   font-family: 'Courgette', cursive;
-  color: #EBEBE9;
   font-size: 3rem;
   padding: 1rem;
+}
+
+h2 {
+  font-family: 'Courgette', cursive;
+  font-size: 2rem;
 }
 
 /* Paragraphs */
@@ -107,6 +111,12 @@ p {
 .grid {
   display: grid;
   width: 100%;
+}
+
+/* Spacing primitives */
+
+.margin-top {
+  margin-top: 2rem;
 }
 
 /* Border primitives */
@@ -151,14 +161,14 @@ p {
   border-color: #C9C9C8 
 }
 
-.margin-top {
-  margin-top: 2rem;
-}
-
 /* Font primitives */ 
 
 .white-txt {
   color: #C9C9C8;
+}
+
+.center {
+  text-align: center;
 }
 
 
