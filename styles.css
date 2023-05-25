@@ -125,13 +125,13 @@ p {
 }
 
 .card {
-  max-width: 360px;
+  max-width: 368px;
 }
 
 .card-txt {
-  margin-top: -3px;
+  margin-top: -4px;
   height: 300px;
-  border-top: 5px solid #C9C9C8;
+  border-top: 10px solid #C9C9C8;
 }
 
 /* Spacing primitives */
@@ -147,53 +147,49 @@ p {
 /* Border primitives */
 
 .border {
-  border: 5px solid #C9C9C8;
+  border: 10px solid #C9C9C8;
 }
 
 .h-border {
-  border-width: 0 5px 0 5px;
+  border-width: 0 10px 0 10px;
   border-style: solid;
   border-color: #C9C9C8
 }
 
 .u-border {
-  border-width: 0 5px 5px 5px;
+  border-width: 0 10px 10px 10px;
   border-style: solid;
   border-color: #C9C9C8
 }
 
 .c-border {
-  border-width: 5px 0 5px 5px;
+  border-width: 10px 0 10px 10px;
   border-style: solid;
   border-color: #C9C9C8
 }
 
 .backwards-c-border {
-  border-width: 5px 5px 5px 0;
+  border-width: 10px 10px 10px 0;
   border-style: solid;
   border-color: #C9C9C8
 }
 
 .n-borde {
-  border-width: 5px 5px 0 5px;
+  border-width: 10px 10px 0 10px;
   border-style: solid;
   border-color: #C9C9C8
 }
 
 .backwards-l-border {
-  border-width: 0 5px 5px 0;
+  border-width: 0 10px 10px 0;
   border-style: solid;
   border-color: #C9C9C8
 }
 
 .l-border {
-  border-width: 0 0 5px 5px;
+  border-width: 0 0 10px 10px;
   border-style: solid;
   border-color: #C9C9C8
-}
-
-.margin-top {
-  margin-top: 2rem;
 }
 
 /* Font primitives */

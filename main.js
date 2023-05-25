@@ -5,9 +5,17 @@
 /* Function to handle screensize */
 
 function handleScreenSizeChange () {
+    /* Banner DOM access */
+
     const banner = document.getElementById('banner');
     const descriptionBox = document.getElementById('description-box');
 
+    /* About DOM access */
+
+    const aboutSection = document.querySelector('section');
+    const cards = document.getElementsByClassName('card');
+
+    /* Conditions for banner borders */
     if (window.innerWidth < 800) {
         descriptionBox.classList.add('u-border');
         descriptionBox.classList.remove('backwards-c-border');
@@ -15,6 +23,53 @@ function handleScreenSizeChange () {
         descriptionBox.classList.remove('u-border');
         descriptionBox.classList.add('backwards-c-border');
     }
+
+    /* Conditions for about section */
+
+    if (window.innerWidth < 736) {
+
+        aboutSection.classList.add('margin-top');
+
+        cards[0].classList.remove('l-border');
+        cards[0].classList.add('border');
+
+        cards[1].classList.remove('u-border');
+        cards[1].classList.add('h-border');
+
+        cards[2].classList.remove('l-border');
+        cards[2].classList.add('border');
+
+        cards[3].classList.remove('u-border');
+        cards[3].classList.add('h-border');
+
+        cards[4].classList.remove('l-border');
+        cards[4].classList.add('border');
+
+    }else if (window.innerWidth >= 736 && window.innerWidth < 1104) {
+
+        /* Remove margin from section */
+        aboutSection.classList.remove('margin-top');
+
+        /* Fix borders for cards */
+
+        cards[0].classList.remove('border');
+        cards[0].classList.add('l-border');
+
+        cards[1].classList.remove('h-border');
+        cards[1].classList.add('u-border');
+
+        cards[2].classList.remove('border');
+        cards[2].classList.add('l-border');
+
+        cards[3].classList.remove('h-border');
+        cards[3].classList.add('u-border');
+
+        cards[4].classList.remove('border');
+        cards[4].classList.add('l-border');
+    } else {
+        
+    }
+
 }
 
 handleScreenSizeChange();
