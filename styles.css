@@ -70,6 +70,11 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
 
 
 
@@ -113,6 +118,7 @@ p {
 
 /* Container primitives */
 
+
 .grid {
   display: grid;
   width: 100%;
@@ -122,6 +128,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .card {

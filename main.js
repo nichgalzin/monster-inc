@@ -30,20 +30,23 @@ function handleScreenSizeChange () {
 
         aboutSection.classList.add('margin-top');
 
-        cards[0].classList.remove('l-border');
+        cards[0].classList.remove('border', 'u-border');
         cards[0].classList.add('border');
 
-        cards[1].classList.remove('u-border');
+        cards[1].classList.remove('backwards-l-border');
         cards[1].classList.add('h-border');
 
-        cards[2].classList.remove('l-border');
+        cards[2].classList.remove('u-border', 'backwards-l-border');
         cards[2].classList.add('border');
 
-        cards[3].classList.remove('u-border');
+        cards[3].classList.remove('backwards-l-border', 'u-border');
         cards[3].classList.add('h-border');
 
-        cards[4].classList.remove('l-border');
+        cards[4].classList.remove('u-border', 'backwards-l-border');
         cards[4].classList.add('border');
+
+        cards[5].classList.remove('backwards-l-border');
+        cards[5].classList.add('u-border');
 
     }else if (window.innerWidth >= 736 && window.innerWidth < 1104) {
 
@@ -53,20 +56,42 @@ function handleScreenSizeChange () {
         /* Fix borders for cards */
 
         cards[0].classList.remove('border');
-        cards[0].classList.add('l-border');
+        cards[0].classList.add('u-border');
 
         cards[1].classList.remove('h-border');
-        cards[1].classList.add('u-border');
+        cards[1].classList.add('backwards-l-border');
+
+        cards[2].classList.remove('border', 'backwards-l-border');
+        cards[2].classList.add('u-border');
+
+        cards[3].classList.remove('h-border', 'u-border');
+        cards[3].classList.add('backwards-l-border');
+
+        cards[4].classList.remove('border', 'backwards-l-border');
+        cards[4].classList.add('u-border');
+
+        cards[5].classList.remove('u-border');
+        cards[5].classList.add('backwards-l-border');
+
+    } else {
+
+        cards[0].classList.remove('border');
+        cards[0].classList.add('u-border');
+
+        cards[1].classList.remove('h-border');
+        cards[1].classList.add('backwards-l-border');
 
         cards[2].classList.remove('border');
-        cards[2].classList.add('l-border');
+        cards[2].classList.add('backwards-l-border');
 
-        cards[3].classList.remove('h-border');
+        cards[3].classList.remove('h-border', 'backwards-l-border');
         cards[3].classList.add('u-border');
 
-        cards[4].classList.remove('border');
-        cards[4].classList.add('l-border');
-    } else {
+        cards[4].classList.remove('border', 'u-border');
+        cards[4].classList.add('backwards-l-border');
+
+        cards[5].classList.remove('u-border');
+        cards[5].classList.add('backwards-l-border');
         
     }
 
