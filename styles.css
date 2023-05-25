@@ -126,7 +126,12 @@ p {
 
 .card {
   max-width: 360px;
-  margin: 1rem 1rem;
+}
+
+.card-txt {
+  margin-top: -3px;
+  height: 300px;
+  border-top: 5px solid #C9C9C8;
 }
 
 /* Spacing primitives */
@@ -143,6 +148,12 @@ p {
 
 .border {
   border: 5px solid #C9C9C8;
+}
+
+.h-border {
+  border-width: 0 5px 0 5px;
+  border-style: solid;
+  border-color: #C9C9C8
 }
 
 .u-border {
