@@ -1,2 +1,9 @@
 -have some elements in the page flash like lightening (use async js to acheive this).
 - have an element that looks like it's crawling across the screen like a bug?
+
+
+
+Buttons and links:
+   -Links containers turn black, font white on hover or focus.
+   -Add a flashing Help button to banner text
+
