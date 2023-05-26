@@ -78,7 +78,7 @@ main {
 
 
 
-
+ 
 /*------------------------------------*\
   Base
 \*------------------------------------*/
@@ -280,6 +280,47 @@ nav ul li a {
   margin-top: 0.25rem;
   font-size: 2rem;
   font-style: italic;
+}
+
+/* Button */
+
+.button {
+  background-color: #CA4335;
+  color: #C9C9C8;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin-left: 35%;
+  text-decoration: none;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  animation: glowing 1300ms infinite;
+}
+
+.button:active {
+  top: .35rem;
+}
+
+/* Key frames for button */
+
+@keyframes glowing {
+  0% {
+    background-color: #CA4335;
+    box-shadow: 0 0 3px #CA4335;
+    
+  }
+  50% {
+    background-color: #EA150E;
+    box-shadow: 0 0 20px #EA150E;
+    color: #fff;
+
+  }
+  100% {
+    background-color: #CA4335;
+    box-shadow: 0 0 3px #CA4335;
+  }
 }
 
 /* Page-foot */
