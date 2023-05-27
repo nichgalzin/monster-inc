@@ -78,7 +78,7 @@ main {
 
 
 
- 
+
 /*------------------------------------*\
   Base
 \*------------------------------------*/
@@ -128,7 +128,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+
 }
 
 .card {
@@ -309,7 +309,7 @@ nav ul li a {
   0% {
     background-color: #CA4335;
     box-shadow: 0 0 3px #CA4335;
-    
+
   }
   50% {
     background-color: #EA150E;
@@ -383,16 +383,16 @@ footer {
 \*------------------------------------*/
 
 form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  background: #EBEBE9;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
-  padding: 1rem;
-  border-radius: 4px;
-  background-color: #fff;
 }
-
 
 label,
 input,
@@ -403,12 +403,49 @@ select {
   justify-content: center;
   margin-top: 0.5rem;
   padding: 0.5rem 0.5rem;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 input,
 textarea,
 select {
   margin-left: 1rem;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+:optional {
+  opacity: 0.4;
+  transition: .2s;
+}
+
+:optional:hover {
+  opacity: 1;
+}
+
+input[type="text"] {
+  padding: 2px;
+  width: 100%;
+  border: 1px solid silver;
+}
+
+input[type=submit] {
+  background: #EA150E;
+  color: white;
+  padding:10px 0;
+  border-color: rgba(0,0,0,.1);
+  font-weight: bold;
+  opacity: 1;
+  width: 30%;
+}
+
+select {
+  width: 100%;
+  border: 1px solid silver;
+  padding: 5px;
 }
 
 .header-box-contact {

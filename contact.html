@@ -11,54 +11,59 @@
 <body>
   <div id="header-placeholder"></div>
 
-  <div class="header-box-contact border">
-    <h1>Contact Us</h1>
-    <p class="white-txt">Interested to learn more? Leave us a message here and
-      a member of our team will get in touch with you shortly.</p>
+  <div class="grid  banner-grid  margin-top" id="banner">
+    <div class="header-box-contact  border">
+      <h1 class="white-txt">Contact Us</h1>
+      <p class="white-txt">Interested to learn more? Leave us a message here and
+        a member of our team will get in touch with you shortly.</p>
+    </div>
+
+    <div class="description-box" id="description-box">
+
+      <form
+        id="form"
+        action="submitted.html"
+      >
+
+        <label for="name">Name
+          <input id="name" name="name" type="text" placeholder="John Doe" required/>
+        </label>
+
+        <label for="company-name"> Your company
+          <input id="company-name" name="company-name" type="text" required/>
+        </label>
+
+        <label for="email">Email
+          <input id="email" name="email" type="email" required/>
+        </label>
+
+        <label for="message">Your request
+          <textarea name="message"></textarea>
+        </label>
+
+        <label for="choice">
+          Choose a detective
+          <select id="choice">
+            <option value="Any">No Preference</option>
+            <option value="Banshee">Banshee</option>
+            <option value="Frankenstein">Frankenstein</option>
+            <option value="Dracula">Dracula</option>
+            <option value="Siren">Siren</option>
+            <option value="Sea monster">Sea monster</option>
+            <option value="Werewolf">Werewolf</option>
+          </select>
+        </label>
+
+        <label for="Consent" class="checkbox">
+          <input id="Consent" name="Consent" type="checkbox" required/>
+          <p>I consent</p>
+        </label>
+
+        <input type="submit"></input>
+
+      </form>
+    </div>
   </div>
-
-  <form
-      id="form"
-      action="submitted.html"
-  >
-
-    <label for="name">Name
-      <input id="name" name="name" type="text" required/>
-    </label>
-
-    <label for="company-name">Company Name
-      <input id="company-name" name="company-name" type="text" required/>
-    </label>
-
-    <label for="email">Email
-      <input id="email" name="email" type="email" required/>
-    </label>
-
-    <label for="message">Your request
-      <textarea name="message"></textarea>
-    </label>
-
-    <label for="choice">
-      Choose a detective
-      <select id="choice">
-        <option value="Any">No Preference</option>
-        <option value="Banshee">Banshee</option>
-        <option value="Frankenstein">Frankenstein</option>
-        <option value="Dracula">Dracula</option>
-        <option value="Siren">Siren</option>
-        <option value="Sea monster">Sea monster</option>
-        <option value="Werewolf">Werewolf</option>
-      </select>
-    </label>
-
-    <label for="Consent" class="checkbox">
-      <input id="Consent" name="Consent" type="checkbox" required/>
-      <p>I consent</p>
-    </label>
-
-    <button type="submit">Submit</button>
-
-  </form>
 
 
 
