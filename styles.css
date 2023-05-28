@@ -536,6 +536,16 @@ select {
   min-height: 30rem;
 }
 
+.required:after {
+  content:" *";
+  color: red;
+}
+
+.optional:after {
+  content:" optional";
+  color: #a1a1a1;
+}
+
 
 
 
