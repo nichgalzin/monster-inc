@@ -66,7 +66,7 @@
   Generic
 \*------------------------------------*/
 
-body {
+body, a {
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -261,10 +261,21 @@ nav ul li {
   margin-right: 10px;
 }
 
-nav ul li a {
-  text-decoration: underline;
-  font-size: 20px;
-  color: black;
+.link {
+  text-decoration: none;
+  position: relative;
+  font-size: 1.25rem;
+  padding: .5rem .95rem;
+  color: #000;
+}
+
+.link:hover, .link:focus {
+  background-color: #000;
+  color: #C9C9C8;
+}
+
+.link:active {
+  top: .15rem;
 }
 
 /* Banner */
