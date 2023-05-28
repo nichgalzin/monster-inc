@@ -263,6 +263,7 @@ nav ul li {
 
 .link {
   text-decoration: none;
+  position: relative;
   font-size: 1.25rem;
   padding: .5rem .95rem;
   color: #000;
@@ -271,6 +272,10 @@ nav ul li {
 .link:hover, .link:focus {
   background-color: #000;
   color: #C9C9C8;
+}
+
+.link:active {
+  top: .15rem;
 }
 
 /* Banner */
