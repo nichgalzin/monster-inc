@@ -132,6 +132,7 @@ p {
 }
 
 .card {
+  width: 90vw;
   max-width: 368px;
 }
 
@@ -293,7 +294,7 @@ nav ul li {
   font-style: italic;
 }
 
-/* Button */
+/* Help button */
 
 .button {
   background-color: #CA4335;
@@ -314,7 +315,7 @@ nav ul li {
   top: .35rem;
 }
 
-/* Key frames for button */
+/* Key frames for help button */
 
 @keyframes glowing {
   0% {
@@ -332,6 +333,13 @@ nav ul li {
     background-color: #CA4335;
     box-shadow: 0 0 3px #CA4335;
   }
+}
+
+/* About section */
+
+.card img {
+  width: 85vw;
+  max-width: 350px;
 }
 
 /* Page-foot */
