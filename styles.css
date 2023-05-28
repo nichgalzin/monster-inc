@@ -66,7 +66,7 @@
   Generic
 \*------------------------------------*/
 
-body {
+body, a {
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -132,6 +132,7 @@ p {
 }
 
 .card {
+  width: 90vw;
   max-width: 368px;
 }
 
@@ -263,16 +264,26 @@ nav ul {
   padding: 0;
   margin: 0;
 }
-
 nav ul li {
   display: inline;
   margin-right: 10px;
 }
 
-nav ul li a {
-  text-decoration: underline;
-  color: black;
-  font-size: 20px;
+.link {
+  text-decoration: none;
+  position: relative;
+  font-size: 1.25rem;
+  padding: .5rem .95rem;
+  color: #000;
+}
+
+.link:hover, .link:focus {
+  background-color: #000;
+  color: #C9C9C8;
+}
+
+.link:active {
+  top: .15rem;
 }
 
 /* Mobile dropdown menu */
@@ -340,7 +351,7 @@ nav ul li a {
   font-style: italic;
 }
 
-/* Button */
+/* Help button */
 
 .button {
   background-color: #CA4335;
@@ -361,7 +372,7 @@ nav ul li a {
   top: .35rem;
 }
 
-/* Key frames for button */
+/* Key frames for help button */
 
 @keyframes glowing {
   0% {
@@ -379,6 +390,13 @@ nav ul li a {
     background-color: #CA4335;
     box-shadow: 0 0 3px #CA4335;
   }
+}
+
+/* About section */
+
+.card img {
+  width: 85vw;
+  max-width: 350px;
 }
 
 /* Page-foot */
