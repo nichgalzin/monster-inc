@@ -331,7 +331,7 @@ nav ul li {
 .dropdown:hover .dropbtn:hover {
   background-color: #c9c9c8 ;
   color: #000;
-} 
+}
 
 
 
@@ -486,9 +486,13 @@ input,
 textarea,
 select {
   margin-left: 1rem;
+  margin-top: 0.5rem;
 }
 
 label {
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: 5px;
   color: #666;
 }
@@ -502,9 +506,11 @@ label {
   opacity: 1;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"],
+textarea {
   padding: 2px;
-  width: 100%;
+  width: 80%;
   border: 1px solid silver;
 }
 
@@ -561,7 +567,7 @@ select {
   .margin-top-lg {
     margin-top: 5rem;
   }
-  
+
 }
 
 /* Large screens */
