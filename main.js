@@ -9,6 +9,7 @@ function handleScreenSizeChange () {
 
     const banner = document.getElementById('banner');
     const descriptionBox = document.getElementById('description-box');
+    const sectionHeader = document.getElementById('about');
 
     /* About DOM access */
 
@@ -22,6 +23,16 @@ function handleScreenSizeChange () {
     } else {
         descriptionBox.classList.remove('u-border');
         descriptionBox.classList.add('backwards-c-border');
+    }
+
+    /* Conditions for borders for section header */
+
+    if (window.innerWidth < 801) {
+        sectionHeader.classList.remove('u-border');
+        sectionHeader.classList.add('border');
+    } else {
+        sectionHeader.classList.remove('border');
+        sectionHeader.classList.add('u-border');
     }
 
     /* Conditions for about section */
