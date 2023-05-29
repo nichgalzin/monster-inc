@@ -345,15 +345,12 @@ nav ul li {
   color: #000;
 }
 
-
-
-
 /* Banner */
 
 .header-box {
   background-image: url(images/main-city-medium.jpg);
   background-size: cover;
-  min-height: 30rem;
+  min-height: 38rem;
 
 }
 
@@ -565,6 +562,16 @@ select {
 /*------------------------------------*\
   Media queries
 \*------------------------------------*/
+
+/* Small screen */
+
+@media screen and (max-width: 800px) {
+   
+  main {
+    margin-top: 2rem;
+  }
+
+}
 
 /* Medium screens */
 
