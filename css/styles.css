@@ -348,7 +348,7 @@ nav ul li {
 /* Banner */
 
 .header-box {
-  background-image: url(images/main-city-medium.jpg);
+  background-image: url(/images/main-city-medium.jpg);
   background-size: cover;
   min-height: 38rem;
 
