@@ -2,7 +2,7 @@
 
 function displayHeader () {
   
-  if (window.innerWidth < 585) {
+  if (window.innerWidth < 684) {
     fetch('components/mobile-header.html')
     .then(response => response.text())
     .then(data => {
