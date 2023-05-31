@@ -93,11 +93,6 @@ h1 {
 
 h2 {
   font-family: 'Courgette', cursive;
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-family: 'Courgette', cursive;
   font-size: 1.5rem;
 }
 
@@ -354,7 +349,7 @@ nav ul li {
 /* Banner */
 
 .header-box {
-  background-image: url('./images/main-city-medium.jpg');
+  background-image: url('/images/main-city-medium.jpg');
   background-size: cover;
   min-height: 38rem;
 
@@ -587,7 +582,7 @@ select {
 }
 
 .header-box-contact {
-  background-image: url('./images/contact-city.jpeg');
+  background-image: url('/images/contact-city.jpeg');
   background-size: cover;
   min-height: 30rem;
 }
