@@ -250,7 +250,7 @@ header {
 .logo,
 #navbar {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   border-left: 5px solid black;
   border-right: 5px solid black;
   height: 50px;
@@ -268,6 +268,13 @@ header {
 
 .logo img {
   max-height: 100%;
+}
+
+.nav-svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: .25rem;
+  vertical-align: bottom;
 }
 
 
@@ -316,11 +323,9 @@ nav ul li {
 .dropdown-content {
   display:none;
   position: absolute;
-  top: 2.8rem;
-  left: 0.5rem;
+  top: 2.5rem;
+  left: -3rem;
   background-color: #000;
-  min-width: 120px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
@@ -329,6 +334,7 @@ nav ul li {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  min-width: 175px;
 }
 
 .dropdown-content a:hover {
