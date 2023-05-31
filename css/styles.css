@@ -71,7 +71,7 @@ body, a {
 }
 
 section {
-  max-width: 1120px;
+  max-width: 1475px;
   margin: 0 auto;
 }
 
@@ -129,10 +129,6 @@ p {
 .card {
   width: 90vw;
   max-width: 368px;
-}
-
-.full-width {
-  width: 100%;
 }
 
 .card-txt {
@@ -443,13 +439,6 @@ nav ul li {
   }
 }
 
-/* About section */
-
-.card img {
-  width: 85vw;
-  max-width: 350px;
-}
-
 /* Page-foot */
 
 footer {
@@ -501,7 +490,17 @@ footer {
   text-transform: capitalize;
 }
 
+/*------------------------------------*\
+  About page
+\*------------------------------------*/
 
+
+/* About section */
+
+.card img {
+  width: 85vw;
+  max-width: 350px
+}
 
 
 
