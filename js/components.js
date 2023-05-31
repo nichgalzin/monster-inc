@@ -1,7 +1,7 @@
-/* Function to display which header based on screen size */
+/* Function to display which header to insert based on screen size */
 
 function displayHeader () {
-  
+
   if (window.innerWidth < 684) {
     fetch('./components/mobile-header.html')
     .then(response => response.text())
@@ -16,14 +16,14 @@ function displayHeader () {
         const headerPlaceholder = document.getElementById('header-placeholder');
         headerPlaceholder.innerHTML = data;
     });
-  }   
+  }
 }
 
 /* Function call */
 
 displayHeader();
 
-/* Insterting footer component */
+/* Inserting footer component */
 
 fetch('./components/footer.html')
 .then(response => response.text())
