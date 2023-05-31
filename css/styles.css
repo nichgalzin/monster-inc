@@ -345,7 +345,7 @@ nav ul li {
 /* Banner */
 
 .header-box {
-  background-image: url("https://github.com/nichgalzin/monster-inc/blob/main/images/main-city-medium.jpg?raw=true");
+  background-image: url("../images/main-city-medium.jpeg");
   background-size: cover;
   min-height: 38rem;
 
@@ -581,7 +581,7 @@ select {
 }
 
 .header-box-contact {
-  background-image: url("https://github.com/nichgalzin/monster-inc/blob/main/images/contact-city.jpeg?raw=true");
+  background-image: url("../images/contact-city.jpeg");
   background-size: cover;
   min-height: 30rem;
 }
