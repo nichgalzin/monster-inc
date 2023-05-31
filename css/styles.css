@@ -596,6 +596,10 @@ select {
   color: #a1a1a1;
 }
 
+#Consent {
+  margin-right: 1rem;
+}
+
 
 
 
@@ -607,7 +611,7 @@ select {
 /* Small screen */
 
 @media screen and (max-width: 800px) {
-   
+
   main {
     margin-top: 2rem;
   }
