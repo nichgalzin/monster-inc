@@ -3,14 +3,14 @@
 function displayHeader () {
   
   if (window.innerWidth < 684) {
-    fetch('/components/mobile-header.html')
+    fetch('./components/mobile-header.html')
     .then(response => response.text())
     .then(data => {
       const headerPlaceholder = document.getElementById('header-placeholder');
       headerPlaceholder.innerHTML = data;
     });
   } else {
-    fetch('/components/header.html')
+    fetch('./components/header.html')
       .then(response => response.text())
       .then(data => {
         const headerPlaceholder = document.getElementById('header-placeholder');
@@ -25,7 +25,7 @@ displayHeader();
 
 /* Insterting footer component */
 
-fetch('/components/footer.html')
+fetch('./components/footer.html')
 .then(response => response.text())
 .then(data => {
   const footerPlaceholder = document.getElementById('footer-placeholder');
