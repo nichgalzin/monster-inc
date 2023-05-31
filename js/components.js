@@ -34,4 +34,4 @@ fetch('./components/footer.html')
 
 /* Event listener for resizing screen */
 
-  window.addEventListener('resize', displayHeader)
+  window.addEventListener('resize', displayHeader);
